@@ -80,18 +80,20 @@ export default {
       posts: [
         {
           color: this.getColor(),
-          title: "Titulo da Publicação 01",
-          subtitle: "Subtitulo da Publicação 01",
+          title: "Lorem Ipsum 01",
+          subtitle: "Dolor sit amet",
           date: this.getDate(),
-          content: "Conteúdo do post",
+          content:
+            "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           author: "Carolina Souza Floriano",
         },
         {
           color: this.getColor(),
-          title: "Titulo da Publicação 02",
-          subtitle: "Subtitulo da Publicação 02",
+          title: "Lorem Ipsum 02",
+          subtitle: "Dolor sit amet",
           date: this.getDate(),
-          content: "Conteúdo do post",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan. Pellentesque eu tincidunt tortor aliquam. Semper feugiat nibh sed pulvinar. Nisl nunc mi ipsum faucibus vitae. Nisi vitae suscipit tellus mauris a diam. Lacus luctus accumsan tortor posuere ac ut consequat. Ac turpis egestas integer eget. Ut aliquam purus sit amet luctus venenatis lectus magna. Diam vel quam elementum pulvinar etiam non. Vitae purus faucibus ornare suspendisse sed nisi. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. In ante metus dictum at tempor commodo ullamcorper a lacus.",
           author: "Carolina Souza Floriano",
         },
       ],
@@ -241,11 +243,14 @@ body {
 
 .contentPost {
   padding-top: 10px;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .author {
   display: flex;
   justify-content: right;
+  margin-top: 15px;
 }
 
 .deleteButton {
@@ -336,5 +341,35 @@ body {
   display: grid;
   align-content: center;
   font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75em;
+  }
+
+  .viewPosts {
+    width: 98%;
+  }
+
+  .newPost {
+    width: 98%;
+    height: 60%;
+    position: relative;
+    row-gap: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .avatar {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
 }
 </style>
