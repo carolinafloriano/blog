@@ -1,24 +1,6 @@
-# blog
+# Projeto: Blog
+Projeto de um blog desenvolvido utilizando o framework de desenvolvimento web Vue.js. No blog em questão é possível inserir, editar e excluir posts.
 
-## Project setup
+## GitHub Pages
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**Link:** https://carolinafloriano.github.io/blog/
